@@ -8,9 +8,9 @@ void main()
     int matrix[SIZE][SIZE];
     int sum=0;
     printf("Enter the elements of matrix (2D array) :\n");
-    for(int i=0;i<SIZE;i++)
+    for(int i=0;i<SIZE;i++) // rows
     {
-        for(int j=0;j<SIZE;j++)
+        for(int j=0;j<SIZE;j++) // columns
         {
             scanf("%d",&matrix[i][j]); // taking A matrix input
             if(i==j)

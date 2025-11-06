@@ -4,9 +4,9 @@ void main()
 {
     int matrix[3][3];
     printf("Enter the elements of 3x3 matrix (2D array) :\n");
-    for(int i=0;i<3;i++)
+    for(int i=0;i<3;i++) // rows
     {
-        for(int j=0;j<3;j++)
+        for(int j=0;j<3;j++) // columns
         {
             scanf("%d",&matrix[i][j]); // taking matrix input
         }

@@ -7,9 +7,9 @@ void main()
     scanf("%d",&SIZE);
     int matrix[SIZE][SIZE];
     printf("Enter the elements of matrix (2D array) :\n");
-    for(int i=0;i<SIZE;i++)
+    for(int i=0;i<SIZE;i++) // rows
     {
-        for(int j=0;j<SIZE;j++)
+        for(int j=0;j<SIZE;j++) // columns
         {
             scanf("%d",&matrix[i][j]); // taking A matrix input
         }
