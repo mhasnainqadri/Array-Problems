@@ -6,22 +6,19 @@ void main()
     printf("Enter the size of square matrix : ");
     scanf("%d",&SIZE);
     int matrix[SIZE][SIZE];
+    int sum=0;
     printf("Enter the elements of matrix (2D array) :\n");
     for(int i=0;i<SIZE;i++)
     {
         for(int j=0;j<SIZE;j++)
         {
             scanf("%d",&matrix[i][j]); // taking A matrix input
+            if(i==j)
+            {
+                sum+=matrix[i][j]; // Sum of right diagonal
+            }
         }
     }
-    printf("Transpose of this matrix is :\n");
-    for(int i=0;i<SIZE;i++)
-    {
-        for(int j=0;j<SIZE;j++)
-        {
-            printf("%d ",matrix[j][i]); // Displaying transpose of matrix ([j][i] instead of usual [i][j])
-        }
-        printf("\n");
-    }
+    printf("Sum of right diagonal is : %d",sum); // Displaying sum
     getch();
 }
