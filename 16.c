@@ -26,6 +26,15 @@ void main()
             i=0;
         }
     }
-    printf("\nSecond Largest element : %d",arr2[ARR_SIZE-2]); // Displaying 2nd last value of sorted arr2 (2nd largest element of arr)
+    int second_largest=arr2[ARR_SIZE-1]; // Last index of arr2 (largest element of arr)
+    for(int i=ARR_SIZE-1;i>=0;i--)
+    {
+        if(arr2[i]<second_largest)
+        {
+            second_largest=arr2[i]; // Updating second largest of arr2 (also second largest of arr)
+            break;
+        }
+    }
+    printf("Second Largest element : %d",second_largest); // Displaying second largest element of arr2 (also second largest of arr)
     getch();
 }

@@ -26,6 +26,15 @@ void main()
             i=0;
         }
     }
-    printf("Second Smallest element : %d",arr2[1]); // Displaying 2nd value of sorted arr2 (2nd smallest element of arr)
+    int second_smallest=arr2[0]; // Last index of arr2 (largest element of arr)
+    for(int i=0;i<ARR_SIZE;i++)
+    {
+        if(arr2[i]>second_smallest)
+        {
+            second_smallest=arr2[i]; // Updating second smallest of arr2 (also second smallest of arr)
+            break;
+        }
+    }
+    printf("Second Smallest element : %d",second_smallest); // Displaying second smallest element of arr2 (also second smallest of arr)
     getch();
 }
