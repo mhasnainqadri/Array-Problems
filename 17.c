@@ -26,7 +26,7 @@ void main()
             i=0;
         }
     }
-    int second_smallest=arr2[0]; // Last index of arr2 (largest element of arr)
+    int second_smallest=arr2[0]; // First index of arr2 (smallest element of arr)
     for(int i=0;i<ARR_SIZE;i++)
     {
         if(arr2[i]>second_smallest)
